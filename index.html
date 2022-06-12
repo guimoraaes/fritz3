@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Fritz Delivery</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <link rel="stylesheet" href="css/widgets.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lottie-bg">
+        <lottie-interactive id="lottie-bg" path="animations/bg-up-wave.json" autoplay style="left:0; right:0; position:absolute" loop></lottie-interactive>
+    </div>
+    <header class="header-primario flex">
+        <div>
+            <img class="logo" src="img/logo-fritz.svg">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="nav-primaria" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <lottie-interactive class="hamburguer" path="animations/hamb3.json" interaction="switch"></lottie-interactive>
+        </button>
+
+        <nav>
+            <ul id="nav-primaria" data-visible="false" class="nav-primaria flex">
+                <!-- Inicio -->
+                <li class="active">
+                    <a href="index.html">
+                        <lottie-interactive path="#" interaction="click"></lottie-interactive><!-- //////Inativo////// -->
+                        INÍCIO
+                    </a>
+                </li>
+                <!-- Como Funciona -->
+                <li class="limaior">
+                    <a href="comofunciona.html">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Inativo////// -->
+                        COMO FUNCIONA
+                    </a>
+                </li>
+                <!-- Serviços -->
+                <li>
+                    <a href="servicos.html">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Inativo////// -->
+                        SERVIÇOS
+                    </a>
+                </li>
+                <!-- Licencie-se -->
+                <li class="limaior2">
+                    <a href="licenciese.html">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Inativo////// -->
+                        LICENCIE-SE
+                    </a>
+                </li>
+                <!-- CONTATO -->
+                <li>
+                    <a href="contato.html">
+                        <lottie-interactive path="#" interaction="morph"></lottie-interactive><!-- //////Inativo////// -->
+                        CONTATO
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Scripts-->
+    <script src="js/nav.js" defer></script>
+<!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- Lottie libraries -->
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<!-- Our interactivity code -->
+    <script type="text/javascript" src="js/interactions.js"></script>
+
+</body>
+</html>
